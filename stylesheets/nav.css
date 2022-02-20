@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 .nav-container{
@@ -10,6 +10,7 @@
     align-items: center;
     padding: 0.5rem;
     background: white;
+    border-bottom: 1px solid black;
 }
 
 .nav-bar-left{
@@ -26,17 +27,33 @@
     margin: 0;
     position: relative;
     gap:2em;
+    align-items: center;
 }
 
 .nav-bar-title-text{
     padding: 0.5rem 1rem;
     font-weight: bold;
+    font-size: 3rem;
 }
 
 .nav-bar-list-items{
     padding: 0.5rem 1rem;
 }
+.nav-bar-list-items-text{
+    font-size: 1.5rem;
+}
 
 .link-a{
     text-decoration: none;
 }
+
+.link-a-font-color-black{
+    color: black;
+}
+
+.nav-bar-right{
+    flex: 0 1 auto;
+    margin-left: auto;
+
+}
+
