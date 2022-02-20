@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: white;
+}
+
+.nav-bar-left{
+    max-width: 100%;
+    flex: 1 1 auto;
+    margin-right: auto;
+}
+.nav-bar-list{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    gap:2em;
+}
+
+.nav-bar-title-text{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.nav-bar-list-items{
+    padding: 0.5rem 1rem;
+}
+
+.link-a{
+    text-decoration: none;
+}
