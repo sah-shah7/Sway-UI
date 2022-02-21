@@ -1,20 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../main.css">
-    <title>Document</title>
+    <title>Res Img - Components</title>
 </head>
+
 <body>
-    <div class="image-container">
-        <div class="res-img-container">
-            <img class="res-img" src="../assests/jpegs/pexels-photo-220453.jpeg" alt="Responsive Image">
+    <!-- Navigation Top Bar Starts Here-->
+    <nav class="nav-container">
+        <div class="nav-bar-left">
+            <ul class="nav-bar-list">
+                <li class="nav-bar-title-text">
+                    <a class="link-a link-a-font-color-black" href="#">Sway UI</a>
+                </li>
+            </ul>
         </div>
-        <div class="circular-img-container">
-            <img class="cir-img" src="../assests/jpegs/pexels-photo-220453.jpeg" alt="Responsive Image">
+        <div class="nav-bar-right">
+            <ul class="nav-bar-list">
+                <li class="nav-bar-list-items nav-bar-list-items-text">
+                    <a class="link-a link-a-font-color-black" href="#">Home</a>
+                </li>
+                <li class="nav-bar-list-items nav-bar-list-items-text">
+                    <a class="link-a link-a-font-color-black" href="#">Docs</a>
+                </li>
+                <li class="nav-bar-list-items nav-bar-list-items-text">
+                    <a class="link-a link-a-font-color-black" href="#">Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navigation top bar ends here-->
+
+    <!--Main Body content & sidebar-->
+    <div class="main-body-container">
+        <!--Sidebar starts here-->
+        <aside class="navbar-side">
+            <nav>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-items">
+                        <a href="../../Documentation/documentation.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Getting Started</a>
+                    </li>
+
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Alerts/alerts.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Alerts</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Avatars/avatar.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Avatars</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Badges/badges.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Badges</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Buttons/buttons.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Buttons</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Cards/cards.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Cards</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Images/images.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Images</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/input/input.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Input</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/lists/lists.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Lists</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/modal/modal.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Modal</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/navigation/navigation.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Navigation</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/rating/rating.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Rating</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/grid/grid.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Simplified Grid</a>
+                    </li>
+
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/toast/toast.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Toast</a>
+                    </li>
+                    <li class="sidebar-list-items">
+                        <a href="../../Components/Utilities/utilities.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Utilities</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!--Sidebar ends here-->
+        <div class="component-container">
+
+            <div class="image-container-typ-1">
+                <div class="examples-description">
+                    <h1 class="h1-size-1">Images</h1>
+                    <p class="p-description">
+                        Sway UI has support to turn an image into responsive image & circular image.
+                    </p>
+                    <h1 class="h1-size-1">Responsive Image</h1>
+                    <p class="p-description">
+                        To turn an image into responsive, add <strong>res-img</strong> to class of the img element.
+                        
+                    </p>
+                </div>
+
+                <div class="examples-component-flex-row flex-align-item-center">
+                    <div class="res-img-container">
+                        <img class="res-img" src="../../assests/jpegs/pexels-photo-220453.jpeg" alt="Responsive Image">
+                    </div>
+                </div>
+                <div class="examples-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522res-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522res-img%2522%2520src%253D%2522..%252F..%252Fassests%252Fjpegs%252Fpexels-photo-220453.jpeg%2522%2520alt%253D%2522Responsive%2520Image%2522%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1024px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+
+            <div class="image-container-typ-2">
+
+                <div class="examples-description" style="margin-top: 0.5rem;">
+                    <h1 class="h1-size-1">Circular Images</h1>
+                    <p class="p-description">
+                        To turn an img into circular, add <strong>res-img</strong> to class of the img element.
+                    </p>
+                </div>
+
+                <div class="examples-component-flex-row flex-align-item-center">
+                    <div class="circular-img-container">
+                        <img class="cir-img" src="../../assests/jpegs/pexels-photo-220453.jpeg" alt="Responsive Image">
+                    </div>
+                </div>
+                <div class="examples-code">
+                    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522circular-img-container%2522%253E%250A%2520%253Cimg%2520class%253D%2522cir-img%2522%2520src%253D%2522..%252F..%252Fassests%252Fjpegs%252Fpexels-photo-220453.jpeg%2522%2520alt%253D%2522Responsive%2520Image%2522%253E%250A%253C%252Fdiv%253E"
+  style="width: 959px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+                </div>
+            </div>
         </div>
     </div>
+
 </body>
+
 </html>
