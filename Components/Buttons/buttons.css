@@ -1,3 +1,16 @@
+:root{
+    --primary-button-color: #0d6efd;
+    --secondary-button-color: #6c757d;
+    --success-button-color:#48c78e;
+    --text-color-white:#fff;
+    --text-color-black:#000;
+    --danger-button-color:#dc3545;
+    --link-button-color:#0d6efd;
+    --alternate-button-color:#6D28D9;
+
+}
+
+
 .btn-typ-1{
     position: relative;
     padding: 1rem;
@@ -24,44 +37,44 @@
 }
 
 .is-primary{
-    color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    color: var(--text-color-white);
+    background-color: var(--primary-button-color);
+    border-color: var(--primary-button-color);
 }
 
 .is-secondary{
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: var(--text-color-white);
+    background-color: var(--secondary-button-color);
+    border-color: var(--secondary-button-color);
 }
 
 .is-success{
-    background-color: #48c78e;
-    border-color: #48c78e;
-    color: #fff;
+    background-color: var(--success-button-color);
+    border-color: var(--success-button-color);
+    color: var(--text-color-white);
 }
 
 .is-warning{
-    color: #000;
+    color: var(--text-color-black);
     background-color: #ffc107;
     border-color: #ffc107;
 }
 
 .is-danger{
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    color: var(--text-color-white);
+    background-color: var(--danger-button-color);
+    border-color: var(--danger-button-color);
 }
 .is-link{
     font-weight: 400;
-    color: #0d6efd;
+    color: var(--link-button-color);
     text-decoration: underline;
 }
 
 .is-alternate{
-    background-color: #6D28D9;
+    background-color: var(--alternate-button-color);
     color: white;
-    border-color: #6D28D9;
+    border-color: var(--alternate-button-color);
 }
 
 .btn-typ-3{
