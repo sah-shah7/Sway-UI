@@ -21,17 +21,12 @@
     text-align: center !important;
 }
 
-.ml-auto, .mx-auto {
-    margin-left: auto !important;
+.margin-auto{
+    margin: 0 auto auto auto;
 }
-.mb-auto, .my-auto {
-    margin-bottom: auto !important;
-}
-.mr-auto, .mx-auto {
-    margin-right: auto !important;
-}
-.mt-auto, .my-auto {
-    margin-top: 10rem;
+
+.margin-top{
+    margin-top: 10%;
 }
 
 .col-12,.col-sm-10,.col-md-8{
@@ -59,14 +54,11 @@ h1{
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.py-3 {
-    padding-bottom: 1rem !important;
-}
 
-.py-3 {
-    padding-top: 1rem !important;
+.padding-top-bottom{
+    padding: 1rem 0 1rem 0;
 }
-.lead {
+.font-style{
     font-size: 1.2rem;
     font-weight: 500;
 }
