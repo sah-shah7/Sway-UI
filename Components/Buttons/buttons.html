@@ -1,53 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="buttons.css" />
-    <script
-      src="https://kit.fontawesome.com/dd240e367a.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="button-container">
-      <div class="btn-typ-1">
-        <button class="btn-1 is-primary">Primary</button>
-        <button class="btn-1 is-secondary">Secondary</button>
-        <button class="btn-1 is-success">Success</button>
-        <button class="btn-1 is-warning">Warning</button>
-        <button class="btn-1 is-danger">Danger</button>
-        <button class="btn-1 is-link">Link</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../main.css" />
+  <script src="https://kit.fontawesome.com/dd240e367a.js" crossorigin="anonymous"></script>
+  <title>Buttons Component</title>
+</head>
+
+<body>
+  <!-- Navigation Top Bar Starts Here-->
+  <nav class="nav-container">
+    <div class="nav-bar-left">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-title-text">
+          <a class="link-a link-a-font-color-black" href="#">Sway UI</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-bar-right">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Home</a>
+        </li>
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Docs</a>
+        </li>
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navigation top bar ends here-->
+
+  <!--Main Body content & sidebar-->
+  <div class="main-body-container">
+    <!--Sidebar starts here-->
+    <aside class="navbar-side">
+      <nav>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-items">
+            <a href="../../Documentation/documentation.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Getting Started</a>
+          </li>
+
+          <li class="sidebar-list-items">
+            <a href="../../Components/Alerts/alerts.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Alerts</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Avatars/avatar.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Avatars</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/badge/badge.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Badges</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Buttons/buttons.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Buttons</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/card/card.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Cards</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/image/image.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Image</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/input/input.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Input</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/lists/lists.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Lists</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/modal/modal.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Modal</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/navigation/navigation.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Navigation</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/rating/rating.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Rating</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/grid/grid.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Simplified Grid</a>
+          </li>
+
+          <li class="sidebar-list-items">
+            <a href="../../Components/toast/toast.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Toast</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Utilities/utilities.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Utilities</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--Sidebar ends here-->
+    <div class="component-container">
+      <div class="button-container">
+        <div class="examples-description">
+          <h1 class="h1-size-1">Avatars</h1>
+          <p class="p-description">
+            Avatars can be used to display profile pictures. To convert an
+            image into an avatar, just add the below desired class name to the
+            image inside a div element.
+          </p>
+          <h1 class="h1-size-1">Profile Avatars</h1>
+          <p class="p-description">
+            These Avatars can be used to display profile pictures. They can be
+            varired in size. The pre defined sizes are:-
+            <strong>xs, sm, md, lg</strong>. These are in ascending order with
+            respect to their size.
+          </p>
+        </div>
+        <div class="examples-component-flex-row flex-align-item-center">
+        <div class="btn-typ-1">
+          <button class="btn-1 is-primary">Primary</button>
+          <button class="btn-1 is-secondary">Secondary</button>
+          <button class="btn-1 is-success">Success</button>
+          <button class="btn-1 is-warning">Warning</button>
+          <button class="btn-1 is-danger">Danger</button>
+          <button class="btn-1 is-link">Link</button>
+        </div>
       </div>
-
-      <div class="btn-typ-2">
-        <button class="btn-1 is-primary">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Add To Cart
-        </button>
-
-        <button class="btn-1 is-secondary">
-          <i class="fa-solid fa-gear"></i>
-          Settings
-        </button>
-      </div>
-
-      <div class="btn-typ-3">
-        <a href="#">
-          <button class="btn-float-typ-1 is-danger">
-            <i class="fas fa-arrow-up"></i>
+        <div class="btn-typ-2">
+          <button class="btn-1 is-primary">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add To Cart
           </button>
-        </a>
 
-        <a href="#">
-          <button class="btn-float-typ-1 is-alternate">
-            <i class="fa-solid fa-plus"></i>
+          <button class="btn-1 is-secondary">
+            <i class="fa-solid fa-gear"></i>
+            Settings
           </button>
-        </a>
+        </div>
+
+        <div class="btn-typ-3">
+          <a href="#">
+            <button class="btn-float-typ-1 is-danger">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </a>
+
+          <a href="#">
+            <button class="btn-float-typ-1 is-alternate">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
