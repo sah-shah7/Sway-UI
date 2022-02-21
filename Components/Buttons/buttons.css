@@ -1,0 +1,106 @@
+:root{
+    --primary-button-color: #0d6efd;
+    --secondary-button-color: #6c757d;
+    --success-button-color:#48c78e;
+    --text-color-white:#fff;
+    --text-color-black:#000;
+    --danger-button-color:#dc3545;
+    --link-button-color:#0d6efd;
+    --alternate-button-color:#6D28D9;
+
+}
+
+
+.btn-typ-1{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -0.75rem 0;
+
+}
+
+.btn-1{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 10px;
+    line-height: 1.5;
+    margin: 4px 2px;
+
+}
+
+.is-primary{
+    color: var(--text-color-white);
+    background-color: var(--primary-button-color);
+    border-color: var(--primary-button-color);
+}
+
+.is-secondary{
+    color: var(--text-color-white);
+    background-color: var(--secondary-button-color);
+    border-color: var(--secondary-button-color);
+}
+
+.is-success{
+    background-color: var(--success-button-color);
+    border-color: var(--success-button-color);
+    color: var(--text-color-white);
+}
+
+.is-warning{
+    color: var(--text-color-black);
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.is-danger{
+    color: var(--text-color-white);
+    background-color: var(--danger-button-color);
+    border-color: var(--danger-button-color);
+}
+.is-link{
+    font-weight: 400;
+    color: var(--link-button-color);
+    text-decoration: underline;
+}
+
+.is-alternate{
+    background-color: var(--alternate-button-color);
+    color: white;
+    border-color: var(--alternate-button-color);
+}
+
+.btn-typ-3{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -0.75rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-typ-2{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -0.75rem 0;
+
+}
+
+.btn-float-typ-1{
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    vertical-align: middle;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
