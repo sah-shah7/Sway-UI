@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.h1-size-1{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.h2-size-1{
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.h3-size-1{
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.h4-size-1{
+    font-size: 1.375rem;
+    line-height: 1.2;
+}
+
+.h5-size-1{
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.h6-size-1{
+    font-size: 1.125rem;
+    line-height: 1.2;
+
+}
+
+.flex-col-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.text-right-align{
+    text-align: right;
+    font-size: 1.5rem;
+}
+.text-center-align{
+    text-align:center;
+    font-size: 1.5rem;
+}
+.text-left-align{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.p-description{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+.small-text{
+    font-size:0.9rem;
+}
+.gray-text{
+    color: gray;
+}
