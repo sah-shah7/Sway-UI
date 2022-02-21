@@ -48,3 +48,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.examples-component-flex-row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  border: 2px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+
+.flex-align-item-center{
+  align-items: center;
+}
