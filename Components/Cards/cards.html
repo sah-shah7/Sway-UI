@@ -7,109 +7,276 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../main.css" />
   <script src="https://kit.fontawesome.com/dd240e367a.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Cards-Component</title>
 </head>
 
 <body>
-  <div class="card-container">
-    <div class="card">
-      <div class="card-typ-1">
-        <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
-        <h6 class="card-h-style card-subtitle f-s-h6 margin-bottom-typ-2 text-subtitle-color">
-          integer eget aliquet-card subtitle
-        </h6>
-        <p class="card-text-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.Tincidunt
-          ornare massa eget egestas. Morbi tempus iaculis urna id volutpat
-          lacus.
-        </p>
-      </div>
+  <!-- Navigation Top Bar Starts Here-->
+  <nav class="nav-container">
+    <div class="nav-bar-left">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-title-text">
+          <a class="link-a link-a-font-color-black" href="#">Sway UI</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-bar-right">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Home</a>
+        </li>
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Docs</a>
+        </li>
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navigation top bar ends here-->
 
-      <div class="card-typ-1-with-dismiss">
-        <div class="card">
-          <div class="card-typ-1">
+  <!--Main Body content & sidebar-->
+  <div class="main-body-container">
+    <!--Sidebar starts here-->
+    <aside class="navbar-side">
+      <nav>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-items">
+            <a href="../../Documentation/documentation.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Getting Started</a>
+          </li>
 
-            <button class="close-btn">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Alerts/alerts.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Alerts</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Avatars/avatar.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Avatars</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Badges/badges.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Badges</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Buttons/buttons.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Buttons</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Cards/cards.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Cards</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/image/image.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Image</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/input/input.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Input</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/lists/lists.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Lists</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/modal/modal.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Modal</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/navigation/navigation.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Navigation</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/rating/rating.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Rating</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/grid/grid.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Simplified Grid</a>
+          </li>
 
-            <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
-            <h6 class="card-h-style card-subtitle f-s-h6 margin-bottom-typ-2 text-subtitle-color">
-              integer eget aliquet-card subtitle
-            </h6>
-            <p class="card-text-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.Tincidunt ornare massa eget egestas. Morbi tempus iaculis
-              urna id volutpat lacus.
-            </p>
-          </div>
+          <li class="sidebar-list-items">
+            <a href="../../Components/toast/toast.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Toast</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Utilities/utilities.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Utilities</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--Sidebar ends here-->
+    <div class="component-container">
+      <div class="card-container-typ-1">
+        <div class="examples-description">
+          <h1 class="h1-size-1">Badges</h1>
+          <p class="p-description">
+            Badges go along with various components and convey more information with the component. It can be a
+            notification count or status
+          </p>
+          <h1 class="h1-size-1">Badge on Icons</h1>
+          <p class="p-description">
+            Here the badges are used as notification counter on top of a icon. The predefined notification badges are:-
+            <strong>home,bell,cart</strong>. To use the buttons copy the whole
+            button element with the desired icon.
+          </p>
         </div>
-      </div>
-
-      <div class="card-typ-vertical">
-        <div class="card">
-          <div class="card-typ-1">
-            <div class="card-img-vertical-container">
-              <div class="badge-bs">
-                #1 Bestseller
-              </div>
-              <div class="text-overlay">
-                Out of Stock
-              </div>
-              <img src="/assests/jpegs/mobile-stock.jpg" alt="">
-            </div>
-            <div class="card-body">
+        <div class="examples-component-flex-row flex-align-item-center">
+          <div class="card">
+            <div class="card-typ-1">
               <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
+              <h6 class="card-h-style card-subtitle f-s-h6 margin-bottom-typ-2 text-subtitle-color">
+                integer eget aliquet-card subtitle
+              </h6>
               <p class="card-text-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.Tincidunt
-                ornare massa eget egestas.
+                eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.Tincidunt ornare massa eget egestas. Morbi tempus iaculis
+                urna id volutpat lacus.
               </p>
             </div>
-
-            <div class="card-info">
-              <span class="price-after">₹99</span>
-              <span class="price-before text-subtitle-color">₹100</span>
-              <span class="price-percent-difference">1% Off</span>
-            </div>
-            <div class="card-buttons">
-              <span class="btn-add-to-card">
-                <button class="btn-1 is-primary">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  Add To Cart
-                </button>
-              </span>
-              <span class="btn-wishlist">
-                <button class="btn-1 bg-none">
-                  <i class="fa fa-heart-o"></i>
-                </button>
-              </span>
-            </div>
-
           </div>
+        </div>
+        <div class="examples-code">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%253Cdiv%2520class%253D%2522card-typ-1%2522%253E%250A%253Ch5%2520class%253D%2522card-h-style%2520f-s-h5%2522%253Emorbi%2520enim-card%2520title%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522card-h-style%2520card-subtitle%2520f-s-h6%2520margin-bottom-typ-2%2520text-subtitle-color%2522%253E%250Ainteger%2520eget%2520aliquet-card%2520subtitle%250A%253C%252Fh6%253E%250A%253Cp%2520class%253D%2522card-text-paragraph%2522%253E%250ALorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipiscing%2520elit%252C%2520sed%2520do%250Aeiusmod%2520tempor%2520incididunt%2520ut%2520labore%2520et%2520dolore%2520magna%250Aaliqua.Tincidunt%2520ornare%2520massa%2520eget%2520egestas.%2520Morbi%2520tempus%2520iaculis%250Aurna%2520id%2520volutpat%2520lacus.%250A%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+            style="width: 858px; height: 449px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <div class="card-container-typ-2">
+        <div class="examples-description" style="margin-top: 0.5rem;">
+          <h1 class="h1-size-1">Badges on Avatars</h1>
+          <p class="p-description">
+            Badges on Avatars can be used to indicate user activity. Green could mean online, Red - inactive & Orange -
+            Busy or DND
+          </p>
+        </div>
+        <div class="examples-component-flex-row flex-align-item-center">
+          <div class="card-typ-1-with-dismiss">
+            <div class="card">
+              <div class="card-typ-1">
+                <button class="close-btn">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
+                <h6 class="card-h-style card-subtitle f-s-h6 margin-bottom-typ-2 text-subtitle-color">
+                  integer eget aliquet-card subtitle
+                </h6>
+                <p class="card-text-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Tincidunt ornare massa eget egestas. Morbi tempus
+                  iaculis urna id volutpat lacus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="examples-code">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-typ-1-with-dismiss%2522%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%253Cdiv%2520class%253D%2522card-typ-1%2522%253E%250A%253Cbutton%2520class%253D%2522close-btn%2522%253E%250A%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Ch5%2520class%253D%2522card-h-style%2520f-s-h5%2522%253Emorbi%2520enim-card%2520title%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522card-h-style%2520card-subtitle%2520f-s-h6%2520margin-bottom-typ-2%2520text-subtitle-color%2522%253E%250Ainteger%2520eget%2520aliquet-card%2520subtitle%250A%253C%252Fh6%253E%250A%253Cp%2520class%253D%2522card-text-paragraph%2522%253E%250ALorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipiscing%2520elit%252C%2520sed%250Ado%2520eiusmod%2520tempor%2520incididunt%2520ut%2520labore%2520et%2520dolore%2520magna%250Aaliqua.Tincidunt%2520ornare%2520massa%2520eget%2520egestas.%2520Morbi%2520tempus%250Aiaculis%2520urna%2520id%2520volutpat%2520lacus.%250A%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+            style="width: 858px; height: 561px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <div class="card-container-typ-3">
+        <div class="examples-description" style="margin-top: 0.5rem;">
+          <h1 class="h1-size-1">Badges on Avatars</h1>
+          <p class="p-description">
+            Badges on Avatars can be used to indicate user activity. Green could mean online, Red - inactive & Orange -
+            Busy or DND
+          </p>
+        </div>
+        <div class="examples-component-flex-row flex-align-item-center">
+          <div class="card-typ-vertical">
+            <div class="card">
+              <div class="card-typ-1">
+                <div class="card-img-vertical-container">
+                  <div class="badge-bs">#1 Bestseller</div>
+                  <div class="text-overlay">Out of Stock</div>
+                  <img src="../../assests/jpegs/mobile-stock.jpg" alt="mobile stock" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
+                  <p class="card-text-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.Tincidunt ornare massa eget egestas.
+                  </p>
+                </div>
+
+                <div class="card-info">
+                  <span class="price-after">₹99</span>
+                  <span class="price-before text-subtitle-color">₹100</span>
+                  <span class="price-percent-difference">1% Off</span>
+                </div>
+                <div class="card-buttons">
+                  <span class="btn-add-to-card">
+                    <button class="btn-1 is-primary">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                  </span>
+                  <span class="btn-wishlist">
+                    <button class="btn-1 bg-none">
+                      <i class="fa fa-heart-o"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="examples-code">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-typ-vertical%2522%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%253Cdiv%2520class%253D%2522card-typ-1%2522%253E%250A%253Cdiv%2520class%253D%2522card-img-vertical-container%2522%253E%250A%253Cdiv%2520class%253D%2522badge-bs%2522%253E%25231%2520Bestseller%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522text-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassests%252Fjpegs%252Fmobile-stock.jpg%2522%2520alt%253D%2522mobile%2520stock%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%253Ch5%2520class%253D%2522card-h-style%2520f-s-h5%2522%253Emorbi%2520enim-card%2520title%253C%252Fh5%253E%250A%253Cp%2520class%253D%2522card-text-paragraph%2522%253E%250ALorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipiscing%2520elit%252C%2520sed%250Ado%2520eiusmod%2520tempor%2520incididunt%2520ut%2520labore%2520et%2520dolore%2520magna%250Aaliqua.Tincidunt%2520ornare%2520massa%2520eget%2520egestas.%250A%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%253Cspan%2520class%253D%2522price-after%2522%253E%25E2%2582%25B999%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522price-before%2520text-subtitle-color%2522%253E%25E2%2582%25B9100%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522price-percent-difference%2522%253E1%2525%2520Off%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%253Cspan%2520class%253D%2522btn-add-to-card%2522%253E%250A%253Cbutton%2520class%253D%2522btn-1%2520is-primary%2522%253E%250A%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250AAdd%2520To%2520Cart%250A%253C%252Fbutton%253E%250A%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522btn-wishlist%2522%253E%250A%253Cbutton%2520class%253D%2522btn-1%2520bg-none%2522%253E%250A%253Ci%2520class%253D%2522fa%2520fa-heart-o%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+            style="width: 732px; height: 912px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+      <div class="card-container-typ-4">
+        <div class="examples-description" style="margin-top: 0.5rem;">
+          <h1 class="h1-size-1">Badges on Avatars</h1>
+          <p class="p-description">
+            Badges on Avatars can be used to indicate user activity. Green could mean online, Red - inactive & Orange -
+            Busy or DND
+          </p>
+        </div>
+        <div class="examples-component-flex-row flex-align-item-center">
+          <div class="card-typ-horizontal">
+            <div class="card-horizontal">
+              <div class="card-typ-2">
+                <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
+                <h6 class="card-h-style card-subtitle f-s-h6 margin-bottom-typ-2 text-subtitle-color">
+                  integer eget aliquet-card subtitle
+                </h6>
+                <p class="card-text-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="examples-code">
+          <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-typ-horizontal%2522%253E%250A%253Cdiv%2520class%253D%2522card-horizontal%2522%253E%250A%253Cdiv%2520class%253D%2522card-typ-2%2522%253E%250A%253Ch5%2520class%253D%2522card-h-style%2520f-s-h5%2522%253Emorbi%2520enim-card%2520title%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522card-h-style%2520card-subtitle%2520f-s-h6%2520margin-bottom-typ-2%2520text-subtitle-color%2522%253E%250Ainteger%2520eget%2520aliquet-card%2520subtitle%250A%253C%252Fh6%253E%250A%253Cp%2520class%253D%2522card-text-paragraph%2522%253E%250ALorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipiscing%2520elit%252C%2520sed%250Ado%2520eiusmod%2520tempor%2520incididunt%2520ut%2520labore%2520et%2520dolore%2520magna%2520aliqua.%250A%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+  style="width: 875px; height: 465px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
       </div>
 
-      <div class="card-typ-horizontal">
-        <div class="card-horizontal">
-          <div class="card-typ-2">
-            <h5 class="card-h-style f-s-h5">morbi enim-card title</h5>
-            <h6 class="card-h-style card-subtitle f-s-h6 margin-bottom-typ-2 text-subtitle-color">
-              integer eget aliquet-card subtitle
-            </h6>
-            <p class="card-text-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-
-
 </body>
 
 </html>
