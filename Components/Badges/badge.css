@@ -1,0 +1,73 @@
+@import url(/Avatar/avatar.css);
+
+
+
+.badge-on-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.badge-typ-1{
+    position: relative;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    outline: none;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+.badge-count{
+    position: absolute;
+    top: 8px;
+    right:10px;
+    transform: translate(50%, -50%);
+    height: 0.8rem;
+    min-width: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+}
+
+.typ-bg-red{
+    background-color: red;
+    color: white;
+}
+
+.typ-bg-lime{
+    color: white;
+    background-color: #84cc16;
+}
+
+.typ-bg-yw{
+    color:white;
+    background-color: #f59e0b;
+}
+
+.badge-on-avatar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.badge-avatar{
+    position: relative;
+}
+
+.badge-status {
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    display: block;
+    bottom: 0.125rem;
+    right: 0.125rem;
+    border-radius: 999px;
+  }

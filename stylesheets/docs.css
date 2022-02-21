@@ -64,3 +64,7 @@
 .flex-align-item-center{
   align-items: center;
 }
+
+.f-s-lg{
+  font-size: 1.5rem;
+}

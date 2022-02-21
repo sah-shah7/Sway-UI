@@ -1,0 +1,13 @@
+
+.res-img {
+  width: 50%;
+  height: 50%;
+}
+.cir-img {
+  width: 10rem;
+  height: 10rem;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 50%; 
+}

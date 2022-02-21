@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../main.css" />
-    <title>Text Utilities</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <title>Res Img - Components</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             </ul>
         </div>
     </nav>
-    <!--Navbar Ends here-->
+    <!--Navigation top bar ends here-->
 
     <!--Main Body content & sidebar-->
     <div class="main-body-container">
@@ -55,7 +55,7 @@
                             class="link-a link-a-font-color-black sidebar-list-items-text">Avatars</a>
                     </li>
                     <li class="sidebar-list-items">
-                        <a href="../../Components/badge/badges.html"
+                        <a href="../../Components/Badges/badges.html"
                             class="link-a link-a-font-color-black sidebar-list-items-text">Badges</a>
                     </li>
                     <li class="sidebar-list-items">
@@ -63,12 +63,12 @@
                             class="link-a link-a-font-color-black sidebar-list-items-text">Buttons</a>
                     </li>
                     <li class="sidebar-list-items">
-                        <a href="../../Components/card/card.html"
+                        <a href="../../Components/Cards/cards.html"
                             class="link-a link-a-font-color-black sidebar-list-items-text">Cards</a>
                     </li>
                     <li class="sidebar-list-items">
-                        <a href="../../Components/image/image.html"
-                            class="link-a link-a-font-color-black sidebar-list-items-text">Image</a>
+                        <a href="../../Components/Images/images.html"
+                            class="link-a link-a-font-color-black sidebar-list-items-text">Images</a>
                     </li>
                     <li class="sidebar-list-items">
                         <a href="../../Components/input/input.html"
@@ -95,7 +95,6 @@
                             class="link-a link-a-font-color-black sidebar-list-items-text">Simplified Grid</a>
                     </li>
 
-                
                     <li class="sidebar-list-items">
                         <a href="../../Components/toast/toast.html"
                             class="link-a link-a-font-color-black sidebar-list-items-text">Toast</a>
@@ -109,88 +108,60 @@
         </aside>
         <!--Sidebar ends here-->
         <div class="component-container">
-            <div class="heading-container">
+
+            <div class="image-container-typ-1">
                 <div class="examples-description">
-                    <h1 class="h1-size-1">Text Utilities</h1>
+                    <h1 class="h1-size-1">Images</h1>
                     <p class="p-description">
-                        Text Utilities are various predefined styles that can be used to
-                        style,align and use them instantly
+                        Sway UI has support to turn an image into responsive image & circular image.
                     </p>
-                    <h1 class="h1-size-1">Headings</h1>
+                    <h1 class="h1-size-1">Responsive Image</h1>
                     <p class="p-description">
-                        To use heading styles, just the add class name of the desired font
-                        size to any h tags.
+                        To turn an image into responsive, add <strong>res-img</strong> to class of the img element.
+                        
                     </p>
                 </div>
 
-                <div class="examples-component flex-center row-gap-1">
-                    <h1 class="h1-size-1">h1. This is a very large header.</h1>
-                    <h2 class="h2-size-1">h2. This is a large header.</h2>
-                    <h3 class="h3-size-1">h3. This is a medium header.</h3>
-                    <h4 class="h4-size-1">h4. This is a moderate header.</h4>
-                    <h5 class="h5-size-1">h5. This is a small header.</h5>
-                    <h6 class="h6-size-1">h6. This is a tiny header.</h6>
+                <div class="examples-component-flex-row flex-align-item-center">
+                    <div class="res-img-container">
+                        <img class="res-img" src="../../assests/jpegs/pexels-photo-220453.jpeg" alt="Responsive Image">
+                    </div>
                 </div>
                 <div class="examples-code">
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522h1-size-1%2522%253Eh1.%2520This%2520is%2520a%2520very%2520large%2520header.%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522h2-size-1%2522%253Eh2.%2520This%2520is%2520a%2520large%2520header.%253C%252Fh2%253E%250A%253Ch3%2520class%253D%2522h3-size-1%2522%253Eh3.%2520This%2520is%2520a%2520medium%2520header.%253C%252Fh3%253E%250A%253Ch4%2520class%253D%2522h4-size-1%2522%253Eh4.%2520This%2520is%2520a%2520moderate%2520header.%253C%252Fh4%253E%250A%253Ch5%2520class%253D%2522h5-size-1%2522%253Eh5.%2520This%2520is%2520a%2520small%2520header.%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522h6-size-1%2522%253Eh6.%2520This%2520is%2520a%2520tiny%2520header.%253C%252Fh6%253E"
-                        style="
-                width: 631px;
-                height: 282px;
-                border: 0;
-                transform: scale(1);
-                overflow: hidden;
-              " sandbox="allow-scripts allow-same-origin">
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522res-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522res-img%2522%2520src%253D%2522..%252F..%252Fassests%252Fjpegs%252Fpexels-photo-220453.jpeg%2522%2520alt%253D%2522Responsive%2520Image%2522%253E%250A%253C%252Fdiv%253E"
+                        style="width: 1024px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
             </div>
 
-            <div class="text-alignment-container flex-col-start">
-                <div class="examples-description" style="margin-top: 0.5rem">
-                    <h1 class="h1-size-1">Text Alignment</h1>
+
+            <div class="image-container-typ-2">
+
+                <div class="examples-description" style="margin-top: 0.5rem;">
+                    <h1 class="h1-size-1">Circular Images</h1>
                     <p class="p-description">
-                        Add the class name to the any text elements which an be aligned :- <strong>left,center,right</strong>
+                        To turn an img into circular, add <strong>res-img</strong> to class of the img element.
                     </p>
                 </div>
-                <div class="examples-component row-gap-1">
-                    <div class="text-left-align">Left - Align</div>
-                    <div class="text-center-align">Center - Align</div>
-                    <div class="text-right-align">Right - Align</div>
+
+                <div class="examples-component-flex-row flex-align-item-center">
+                    <div class="circular-img-container">
+                        <img class="cir-img" src="../../assests/jpegs/pexels-photo-220453.jpeg" alt="Responsive Image">
+                    </div>
                 </div>
                 <div class="examples-code">
                     <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522text-left-align%2522%253ELeft%2520-%2520Align%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522text-center-align%2522%253ECenter%2520-%2520Align%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522text-right-align%2522%253ERight%2520-%2520Align%253C%252Fdiv%253E"
-  style="width: 564px; height: 226px; border:0; transform: scale(1); overflow:hidden;"
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522circular-img-container%2522%253E%250A%2520%253Cimg%2520class%253D%2522cir-img%2522%2520src%253D%2522..%252F..%252Fassests%252Fjpegs%252Fpexels-photo-220453.jpeg%2522%2520alt%253D%2522Responsive%2520Image%2522%253E%250A%253C%252Fdiv%253E"
+  style="width: 959px; height: 242px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
                 </div>
-            </div>
-
-            <div class="text-variety-container">
-                <div class="examples-description" style="margin-top: 0.5rem">
-                    <h1 class="h1-size-1">Small Text & Grey Text</h1>
-                    <p class="p-description">
-                        Small Text can be used in places where the content is not the focus.
-                        Gray Text can be used as secondary text
-                    </p>
-                </div>
-                <div class="examples-component flex-center row-gap-1">
-                    <div class="small-text">Small Text</div>
-                    <div class="gray-text"><h3>Gray text</h3></div>
-                </div>
-                <div class="examples-code">
-                    <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522small-text%2522%253ESmall%2520Text%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522gray-text%2522%253E%253Ch3%253EGray%2520text%253C%252Fh3%253E%253C%252Fdiv%253E"
-  style="width: 530px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-                </div>
-
-
             </div>
         </div>
     </div>
-    <!--Main body container ends here-->
+
 </body>
 
 </html>
