@@ -19,6 +19,13 @@
   row-gap: 1rem;
 }
 
+.examples-description{
+  border: 2px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+  
+}
 .examples-component {
   display: flex;
   flex-direction: column;
@@ -35,4 +42,9 @@
   border: 2px solid #dee2e6;
   border-radius: 0.5rem;
   background-color: rgba(171, 184, 195, 1);
+}
+
+.flex-center{
+  align-items: center;
+  justify-content: center;
 }
