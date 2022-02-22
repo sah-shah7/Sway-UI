@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.modal-typ-1{
+    position: relative;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0,0,0,.2);
+    word-wrap: break-word;
+    border-radius: 0.5rem;
+}
+
+.f-s-m-h5{
+    font-size:1.25rem;
+}
+
+.modal-typ-1-header{
+    padding: 1rem;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-typ-1-body{
+    padding:1rem;
+}
+.modal-typ-1-footer{
+    padding:1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-close{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 1rem 1rem 0 0;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
