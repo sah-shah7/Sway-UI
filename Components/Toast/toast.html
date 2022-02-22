@@ -1,29 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="snackbar-container">
-      <div class="snackbar-typ-1">
-        <!-- Use a button to open the snackbar -->
-        <button class = "btn-1 is-primary" id = "toast-btn-success">Show Snackbar</button>
 
-        <!-- The actual snackbar -->
-        <div id="snackbar">Sample Text</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Toast-Component</title>
+</head>
+
+<body>
+  <!-- Navigation Top Bar Starts Here-->
+  <nav class="nav-container">
+    <div class="nav-bar-left">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-title-text">
+          <a class="link-a link-a-font-color-black" href="#">Sway UI</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-bar-right">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Home</a>
+        </li>
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Docs</a>
+        </li>
+        <li class="nav-bar-list-items nav-bar-list-items-text">
+          <a class="link-a link-a-font-color-black" href="#">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navigation top bar ends here-->
+
+  <!--Main Body content & sidebar-->
+  <div class="main-body-container">
+    <!--Sidebar starts here-->
+    <aside class="navbar-side">
+      <nav>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-items">
+            <a href="../../pages/getting-started.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Getting Started</a>
+          </li>
+
+          <li class="sidebar-list-items">
+            <a href="../../Components/Alerts/alerts.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Alerts</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Avatars/avatar.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Avatars</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Badges/badges.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Badges</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Buttons/buttons.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Buttons</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Cards/cards.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Cards</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Images/images.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Images</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Inputs/inputs.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Inputs</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Lists/lists.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Lists</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Modal/modal.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Modal</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Navigation/navigation.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Navigation</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Ratings/rating.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Rating</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/grid/grid.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Simplified Grid</a>
+          </li>
+
+          <li class="sidebar-list-items">
+            <a href="../../Components/Toast/toast.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Toast</a>
+          </li>
+          <li class="sidebar-list-items">
+            <a href="../../Components/Utilities/utilities.html"
+              class="link-a link-a-font-color-black sidebar-list-items-text">Utilities</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--Sidebar ends here-->
+    <div class="component-container">
+      <div class="examples-description">
+        <h1 class="h1-size-1">Toast</h1>
+        <p class="p-description">
+          Toast/Snackbar are used as popups to show a message on the screen. To integrate toast, copy the below code and
+          along with it add the js script file as well.
+        </p>
+      </div>
+      <div class="examples-component-flex-row">
+        <div class="snackbar-container">
+          <div class="snackbar-typ-1">
+            <!-- Use a button to open the snackbar -->
+            <button class="btn-1 is-primary" id="toast-btn-success">Show Snackbar</button>
+
+            <!-- The actual snackbar -->
+            <div id="snackbar">Sample Text</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="examples-code">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=699&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520HTML%2520code%2520for%2520Toast--%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar-container%2522%253E%250A%253Cdiv%2520class%253D%2522snackbar-typ-1%2522%253E%250A%253C%21--%2520Use%2520a%2520button%2520to%2520open%2520the%2520snackbar%2520--%253E%250A%253Cbutton%2520class%253D%2522btn-1%2520is-primary%2522%2520id%253D%2522toast-btn-success%2522%253EShow%2520Snackbar%253C%252Fbutton%253E%250A%250A%253C%21--%2520The%2520actual%2520snackbar%2520--%253E%250A%253Cdiv%2520id%253D%2522snackbar%2522%253ESample%2520Text%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--Add%2520this%2520just%2520aove%2520the%2520closing%2520body%2520tag%2520--%253E%250A%253Cscript%2520src%253D%2522..%252FToast%252Ftoast.js%2522%253E%253C%252Fscript%253E%250A"
+          style="width: 698px; height: 484px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
       </div>
     </div>
-    <script src="../Toast/toast.js"></script>
-  </body>
+  </div>
+  <script src="../Toast/toast.js"></script>
+</body>
+
 </html>
