@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../main.css" />
-  <title>Avatar Component</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Toast-Component</title>
 </head>
 
 <body>
-<!-- Navigation Top Bar Starts Here-->
-<nav class="nav-container">
+ <!-- Navigation Top Bar Starts Here-->
+ <nav class="nav-container">
   <div class="nav-bar-left">
       <ul class="nav-bar-list">
           <li class="nav-bar-title-text">
@@ -107,51 +110,36 @@
       </nav>
   </aside>
   <!--Sidebar ends here-->
-
     <div class="component-container">
-      <div class="container-avatar">
-        <div class="examples-description">
-          <h1 class="h1-size-1">Avatars</h1>
-          <p class="p-description">
-            Avatars can be used to display profile pictures. To convert an
-            image into an avatar, just add the below desired class name to the
-            image inside a div element.
-          </p>
-          <h1 class="h1-size-1">Profile Avatars</h1>
-          <p class="p-description">
-            These Avatars can be used to display profile pictures. They can be
-            varired in size. The pre defined sizes are:-
-            <strong>xs, sm, md, lg</strong>. These are in ascending order with
-            respect to their size.
-          </p>
-        </div>
-        <div class="examples-component-flex-row flex-align-item-center">
-          <div class="avatar avatar-xs">
-            <img class="img-all" src="/assests/jpegs/2.jpg" alt="avatar" />
-          </div>
+      <div class="examples-description">
+        <h1 class="h1-size-1">Toast</h1>
+        <p class="p-description">
+          Toast/Snackbar are used as popups to show a message on the screen. To integrate toast, copy the below code and
+          along with it add the js script file as well.
+        </p>
+      </div>
+      <div class="examples-component-flex-row">
+        <div class="snackbar-container">
+          <div class="snackbar-typ-1">
+            <!-- Use a button to open the snackbar -->
+            <button class="btn-1 is-primary" id="toast-btn-success">Show Snackbar</button>
 
-          <div class="avatar avatar-sm">
-            <img class="img-all" src="/assests/jpegs/2.jpg" alt="avatar" />
-          </div>
-
-          <div class="avatar avatar-md">
-            <img class="img-all" src="/assests/jpegs/2.jpg" alt="avatar" />
-          </div>
-
-          <div class="avatar avatar-lg">
-            <img class="img-all" src="/assests/jpegs/2.jpg" alt="avatar" />
+            <!-- The actual snackbar -->
+            <div id="snackbar">Sample Text</div>
           </div>
         </div>
-        <div class="examples-code">
-          <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-all%2522%2520src%253D%2522%252Fassests%252Fjpegs%252F2.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-all%2522%2520src%253D%2522%252Fassests%252Fjpegs%252F2.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-all%2522%2520src%253D%2522%252Fassests%252Fjpegs%252F2.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img-all%2522%2520src%253D%2522%252Fassests%252Fjpegs%252F2.jpg%2522%2520alt%253D%2522avatar%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
-            style="width: 1024px; height: 473px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
-        </div>
+      </div>
+
+      <div class="examples-code">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=699&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520HTML%2520code%2520for%2520Toast--%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar-container%2522%253E%250A%253Cdiv%2520class%253D%2522snackbar-typ-1%2522%253E%250A%253C%21--%2520Use%2520a%2520button%2520to%2520open%2520the%2520snackbar%2520--%253E%250A%253Cbutton%2520class%253D%2522btn-1%2520is-primary%2522%2520id%253D%2522toast-btn-success%2522%253EShow%2520Snackbar%253C%252Fbutton%253E%250A%250A%253C%21--%2520The%2520actual%2520snackbar%2520--%253E%250A%253Cdiv%2520id%253D%2522snackbar%2522%253ESample%2520Text%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--Add%2520this%2520just%2520aove%2520the%2520closing%2520body%2520tag%2520--%253E%250A%253Cscript%2520src%253D%2522..%252FToast%252Ftoast.js%2522%253E%253C%252Fscript%253E%250A"
+          style="width: 698px; height: 484px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
       </div>
     </div>
   </div>
+  <script src="../Toast/toast.js"></script>
 </body>
 
 </html>

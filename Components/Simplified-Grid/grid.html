@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../main.css">
-    <title>Inputs-Component</title>
+    <title>Grid</title>
 </head>
 
 <body>
@@ -108,66 +108,54 @@
         </aside>
         <!--Sidebar ends here-->
         <div class="component-container">
-
-            <div class="input-container">
-                <div class="examples-description">
-                    <h1 class="h1-size-1">Inputs</h1>
-                    <p class="p-description">
-                        Inputs fields can be used data collection. Feedback about data can be also be provided via Input Filed Styles. If a user hovers over input field or is interacting with , input field 1 can used to indicate focus.
-                        Input fields 2 & 3 can be used for error feedback. To disable any input field, add <strong>is-disabled</strong> to class of an input element.
-                    </p>
-                </div>
-                <div class="examples-component-flex-column flex-align-item-left">
-                    <div class="input-typ-1">
-
-                        <h3>
-                            Input Field Type 1
-                        </h3>
-                        <!--Input Field 1-->
-                        <div class="int-container">
-                            <input class="int-typ-1 int-color-bg-blue" id="int-1" type="text"
-                                placeholder="Enter Text Here...">
-                        </div>
-
-                    </div>
-
-                    <div class="input-typ-2">
-
-                        <h3>
-                            Input Field Type 2 - Error
-                        </h3>
-                        <!--Input Field 2-->
-                        <div class="int-container">
-                            <input class="int-typ-2-error int-color-bg-red" id="int-2" type="text"
-                                placeholder="Enter Text Here...">
-                        </div>
-
-                    </div>
-
-                    <div class="input-typ-3">
-
-                        <h3>
-                            Input Field Type 3 - Error - Disabled
-                        </h3>
-                        <!--Input Field 3-->
-                        <div class="int-container">
-                            <input class="int-typ-2-error is-disabled int-color-bg-red" id="int-3" disabled="true"
-                                type="text" placeholder="Disabled.....">
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-                <div class="examples-code">
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--Input%2520Field%25201--%253E%250A%253Cdiv%2520class%253D%2522int-container%2522%253E%250A%253Cinput%2520class%253D%2522int-typ-1%2520int-color-bg-blue%2522%2520id%253D%2522int-1%2522%2520type%253D%2522text%2522%250Aplaceholder%253D%2522Enter%2520Text%2520Here...%2522%253E%250A%253C%252Fdiv%253E%250A%253C%21--Input%2520Field%25202--%253E%250A%253Cdiv%2520class%253D%2522int-container%2522%253E%250A%253Cinput%2520class%253D%2522int-typ-2-error%2520int-color-bg-red%2522%2520id%253D%2522int-2%2522%2520type%253D%2522text%2522%250Aplaceholder%253D%2522Enter%2520Text%2520Here...%2522%253E%250A%253C%252Fdiv%253E%250A%253C%21--Input%2520Field%25203--%253E%250A%253Cdiv%2520class%253D%2522int-container%2522%253E%250A%253Cinput%2520class%253D%2522int-typ-2-error%2520is-disabled%2520int-color-bg-red%2522%2520id%253D%2522int-3%2522%2520disabled%253D%2522true%2522%250Atype%253D%2522text%2522%2520placeholder%253D%2522Disabled.....%2522%253E%250A%253C%252Fdiv%253E%250A"
-                        style="width: 875px; height: 484px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
+            <div class="examples-description">
+                <h1 class="h1-size-1">Grid Layout</h1>
+                <p class="p-description">
+                   According morzilla docs,"CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives"
+                </p>
+                <h1 class="h1-size-1">2 Column Item Grid</h1>
+                <p class="p-description">
+                    To use 2 column grid layout , create a container and add the class <strong>container-grid grid-c-2</strong> to change the layout of it's child elements.
+                </p>
             </div>
+            <div class="examples-component-flex-column">
+                <div class="container-grid grid-c-2">
+                    <div class="c-1">Column 1</div>
+                    <div class="c-2">Column 2</div>
+                </div>
+            </div>
+
+            <div class="examples-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=699&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-grid%2520grid-c-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522c-1%2522%253EColumn%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522c-2%2522%253EColumn%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 698px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <div class="examples-description" style="margin-top: 0.5rem;">
+                <h1 class="h1-size-1">3 Column Grid Layout</h1>
+                <p class="p-description">
+                    Equal width columns can be broken into multiple lines. Here each color represent a new column.
+                </p>
+            </div>
+
+            <div class="examples-component-flex-column">
+                <div class="container-grid grid-c-2">
+                    <div class="c-1">Column 1</div>
+                    <div class="c-2">Column 2</div>
+                    <div class="c-3">Column 3</div>
+                </div>
+            </div>
+            <div class="examples-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=699&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-grid%2520grid-c-2%2522%253E%250A%253Cdiv%2520class%253D%2522c-1%2522%253EColumn%25201%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522c-2%2522%253EColumn%25202%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522c-3%2522%253EColumn%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    style="width: 698px; height: 298px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+
         </div>
     </div>
 </body>

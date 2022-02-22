@@ -1,0 +1,26 @@
+.star-rating > span:hover,
+.star-rating > span:hover ~ span {
+  color: transparent;
+}
+.star-rating > span:hover:before,
+.star-rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  color: gold;
+}
+
+.star-rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  font-size: 2rem;
+  color: orangered;
+}
+
+.star-rating {
+  unicode-bidi: bidi-override;
+  direction:rtl;
+  text-align: center;
+}
+
