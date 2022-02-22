@@ -15,20 +15,20 @@
         <div class="nav-bar-left">
             <ul class="nav-bar-list">
                 <li class="nav-bar-title-text">
-                    <a class="link-a link-a-font-color-black" href="#">Sway UI</a>
+                    <a class="link-a link-a-font-color-black" href="../../index.html">Sway UI</a>
                 </li>
             </ul>
         </div>
         <div class="nav-bar-right">
             <ul class="nav-bar-list">
                 <li class="nav-bar-list-items nav-bar-list-items-text">
-                    <a class="link-a link-a-font-color-black" href="#">Home</a>
+                    <a class="link-a link-a-font-color-black" href="../../index.html">Home</a>
                 </li>
                 <li class="nav-bar-list-items nav-bar-list-items-text">
-                    <a class="link-a link-a-font-color-black" href="#">Docs</a>
+                    <a class="link-a link-a-font-color-black" href="../../pages/getting-started.html">Docs</a>
                 </li>
                 <li class="nav-bar-list-items nav-bar-list-items-text">
-                    <a class="link-a link-a-font-color-black" href="#">Github</a>
+                    <a class="link-a link-a-font-color-black" href="https://github.com/sah-shah7/Sway-UI">Github</a>
                 </li>
             </ul>
         </div>
@@ -91,7 +91,7 @@
                             class="link-a link-a-font-color-black sidebar-list-items-text">Rating</a>
                     </li>
                     <li class="sidebar-list-items">
-                        <a href="../../Components/Simplified Grid/grid.html"
+                        <a href="../../Components/Simplified-Grid/grid.html"
                             class="link-a link-a-font-color-black sidebar-list-items-text">Simplified Grid</a>
                     </li>
 
@@ -109,22 +109,52 @@
         <!--Sidebar ends here-->
         <div class="component-container">
             <div class="examples-description">
-                <h1 class="h1-size-1">Lists</h1>
+                <h1 class="h1-size-1">Grid Layout</h1>
                 <p class="p-description">
-                    Lists are used to present text or data in a structured format.
+                   According morzilla docs,"CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives"
                 </p>
-                <h1 class="h1-size-1">Ordered List</h1>
+                <h1 class="h1-size-1">2 Column Item Grid</h1>
                 <p class="p-description">
-                    Ordered List includes arrangement of list with a number or an alphabet. The order can be ascending or descending. The pre-defined lists style in Sway UI are
-                    <strong>Numbers, captial alphabets, lowercase alphabets</strong>. To use list style, copy the corresponding class name and add it to li or ol element.
+                    To use 2 column grid layout , create a container and add the class <strong>container-grid grid-c-2</strong> to change the layout of it's child elements.
                 </p>
             </div>
             <div class="examples-component-flex-column">
                 <div class="container-grid grid-c-2">
                     <div class="c-1">Column 1</div>
-                    <div class="c-2"></div>
+                    <div class="c-2">Column 2</div>
                 </div>
             </div>
+
+            <div class="examples-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=699&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-grid%2520grid-c-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522c-1%2522%253EColumn%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522c-2%2522%253EColumn%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 698px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <div class="examples-description" style="margin-top: 0.5rem;">
+                <h1 class="h1-size-1">3 Column Grid Layout</h1>
+                <p class="p-description">
+                    Equal width columns can be broken into multiple lines. Here each color represent a new column.
+                </p>
+            </div>
+
+            <div class="examples-component-flex-column">
+                <div class="container-grid grid-c-2">
+                    <div class="c-1">Column 1</div>
+                    <div class="c-2">Column 2</div>
+                    <div class="c-3">Column 3</div>
+                </div>
+            </div>
+            <div class="examples-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=699&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-grid%2520grid-c-2%2522%253E%250A%253Cdiv%2520class%253D%2522c-1%2522%253EColumn%25201%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522c-2%2522%253EColumn%25202%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522c-3%2522%253EColumn%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                    style="width: 698px; height: 298px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
 
         </div>
     </div>
